@@ -49,8 +49,7 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server "104.236.88.70", :user => "deploy", :roles => %{web app}
-set :branch, "master"
+
 # server "example.com",
 #   user: "user_name",
 #   roles: %w{web app},
