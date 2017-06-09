@@ -1201,3 +1201,405 @@ You have added to the Gemfile:
   INFO ---------------------------------------------------------------------------
  DEBUG [6a569ebd] Running [ -d ~/.rvm ] as deploy@104.236.88.70
  DEBUG [6a569ebd] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:35:12 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0e4790d6] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [0e4790d6] Command: [ -d ~/.rvm ]
+ DEBUG [0e4790d6] Finished in 1.950 seconds with exit status 1 (failed).
+ DEBUG [131e1ddd] Running [ -d /usr/local/rvm ] as deploy@104.236.88.70
+ DEBUG [131e1ddd] Command: [ -d /usr/local/rvm ]
+ DEBUG [131e1ddd] Finished in 0.297 seconds with exit status 0 (successful).
+ DEBUG [1183f956] Running /usr/local/rvm/bin/rvm version as deploy@104.236.88.70
+ DEBUG [1183f956] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [1183f956] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [1183f956] Finished in 2.311 seconds with exit status 0 (successful).
+ DEBUG [25834c3a] Running /usr/local/rvm/bin/rvm current as deploy@104.236.88.70
+ DEBUG [25834c3a] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [25834c3a] 	ruby-2.4.0
+ DEBUG [25834c3a] Finished in 0.727 seconds with exit status 0 (successful).
+ DEBUG [9c47241f] Running /usr/local/rvm/bin/rvm default do ruby --version as deploy@104.236.88.70
+ DEBUG [9c47241f] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [9c47241f] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [9c47241f] Finished in 0.966 seconds with exit status 0 (successful).
+  INFO [ae54cb5f] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [ae54cb5f] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ae54cb5f] Finished in 1.960 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 100.0%
+  INFO [7d7e2667] Running /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh as deploy@104.236.88.70
+ DEBUG [7d7e2667] Command: /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh
+  INFO [7d7e2667] Finished in 0.303 seconds with exit status 0 (successful).
+  INFO [abaeedc5] Running /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD as deploy@104.236.88.70
+ DEBUG [abaeedc5] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD )
+ DEBUG [abaeedc5] 	652aa07332fe886315d152eaafd6312046671a8b	HEAD
+  INFO [abaeedc5] Finished in 2.683 seconds with exit status 0 (successful).
+  INFO [7ec1467c] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [7ec1467c] Command: /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases
+  INFO [7ec1467c] Finished in 1.927 seconds with exit status 0 (successful).
+ DEBUG [3a4479cd] Running [ -f /home/deploy/foco_dengue/current/REVISION ] as deploy@104.236.88.70
+ DEBUG [3a4479cd] Command: [ -f /home/deploy/foco_dengue/current/REVISION ]
+ DEBUG [3a4479cd] Finished in 1.967 seconds with exit status 1 (failed).
+ DEBUG [f8157471] Running [ -f /home/deploy/foco_dengue/repo/HEAD ] as deploy@104.236.88.70
+ DEBUG [f8157471] Command: [ -f /home/deploy/foco_dengue/repo/HEAD ]
+ DEBUG [f8157471] Finished in 1.959 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/foco_dengue/repo
+ DEBUG [956846fd] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [956846fd] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [956846fd] Finished in 1.956 seconds with exit status 0 (successful).
+  INFO [1a7397a2] Running /usr/bin/env git remote set-url origin git@github.com:akmerejf/sinatra-server.git as deploy@104.236.88.70
+ DEBUG [1a7397a2] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git remote set-url origin git@github.com:akmerejf/sinatra-server.git )
+  INFO [1a7397a2] Finished in 0.304 seconds with exit status 0 (successful).
+  INFO [8149b2de] Running /usr/bin/env git remote update --prune as deploy@104.236.88.70
+ DEBUG [8149b2de] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8149b2de] 	Fetching origin
+ DEBUG [8149b2de] 	From github.com:akmerejf/sinatra-server
+   86a3dbb..652aa07  master     -> master
+  INFO [8149b2de] Finished in 1.056 seconds with exit status 0 (successful).
+ DEBUG [8c2c0dd7] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [8c2c0dd7] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [8c2c0dd7] Finished in 2.005 seconds with exit status 0 (successful).
+  INFO [7b663004] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/releases/20170609143528 as deploy@104.236.88.70
+ DEBUG [7b663004] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env mkdir -p /home/deploy/foco_dengue/releases/20170609143528 )
+  INFO [7b663004] Finished in 0.315 seconds with exit status 0 (successful).
+  INFO [d4a894b5] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/foco_dengue/releases/20170609143528 as deploy@104.236.88.70
+ DEBUG [d4a894b5] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/foco_dengue/releases/20170609143528 )
+  INFO [d4a894b5] Finished in 0.508 seconds with exit status 0 (successful).
+ DEBUG [1e652915] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [1e652915] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [1e652915] Finished in 2.102 seconds with exit status 0 (successful).
+ DEBUG [3a30d2e7] Running /usr/bin/env git rev-list --max-count=1 master as deploy@104.236.88.70
+ DEBUG [3a30d2e7] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [3a30d2e7] 	652aa07332fe886315d152eaafd6312046671a8b
+ DEBUG [3a30d2e7] Finished in 0.318 seconds with exit status 0 (successful).
+ DEBUG [af1d0022] Running if test ! -d /home/deploy/foco_dengue/releases/20170609143528; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609143528'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [af1d0022] Command: if test ! -d /home/deploy/foco_dengue/releases/20170609143528; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609143528'" 1>&2; false; fi
+ DEBUG [af1d0022] Finished in 1.893 seconds with exit status 0 (successful).
+  INFO [f6450d4c] Running /usr/bin/env echo "652aa07332fe886315d152eaafd6312046671a8b" >> REVISION as deploy@104.236.88.70
+ DEBUG [f6450d4c] Command: cd /home/deploy/foco_dengue/releases/20170609143528 && /usr/bin/env echo "652aa07332fe886315d152eaafd6312046671a8b" >> REVISION
+  INFO [f6450d4c] Finished in 0.295 seconds with exit status 0 (successful).
+ DEBUG [1e8f4b73] Running if test ! -d /home/deploy/foco_dengue/releases/20170609143528; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609143528'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [1e8f4b73] Command: if test ! -d /home/deploy/foco_dengue/releases/20170609143528; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609143528'" 1>&2; false; fi
+ DEBUG [1e8f4b73] Finished in 1.871 seconds with exit status 0 (successful).
+ DEBUG [31e1ea74] Running /usr/local/rvm/bin/rvm default do bundle check --path /home/deploy/foco_dengue/shared/bundle as deploy@104.236.88.70
+ DEBUG [31e1ea74] Command: cd /home/deploy/foco_dengue/releases/20170609143528 && /usr/local/rvm/bin/rvm default do bundle check --path /home/deploy/foco_dengue/shared/bundle
+ DEBUG [31e1ea74] 	The git source `git://github.com/sinatra/sinatra.git` uses the `git` protocol, which transmits data without encryption. Disable this warning with `bundle config git.allow_insecure true`, or switch to the `https` protocol to keep your data secure.
+ DEBUG [31e1ea74] 	git://github.com/sinatra/sinatra.git (at master@a588348) is not yet checked out.
+Run `bundle install` first.
+ DEBUG [31e1ea74] Finished in 1.512 seconds with exit status 11 (failed).
+  INFO [174dc590] Running /usr/local/rvm/bin/rvm default do bundle install --path /home/deploy/foco_dengue/shared/bundle --without development test --deployment --quiet as deploy@104.236.88.70
+ DEBUG [174dc590] Command: cd /home/deploy/foco_dengue/releases/20170609143528 && /usr/local/rvm/bin/rvm default do bundle install --path /home/deploy/foco_dengue/shared/bundle --without development test --deployment --quiet
+  INFO [174dc590] Finished in 12.210 seconds with exit status 0 (successful).
+  INFO [bbf23c40] Running /usr/bin/env ln -s /home/deploy/foco_dengue/releases/20170609143528 /home/deploy/foco_dengue/releases/current as deploy@104.236.88.70
+ DEBUG [bbf23c40] Command: /usr/bin/env ln -s /home/deploy/foco_dengue/releases/20170609143528 /home/deploy/foco_dengue/releases/current
+  INFO [bbf23c40] Finished in 2.082 seconds with exit status 0 (successful).
+  INFO [fa24555f] Running /usr/bin/env mv /home/deploy/foco_dengue/releases/current /home/deploy/foco_dengue as deploy@104.236.88.70
+ DEBUG [fa24555f] Command: /usr/bin/env mv /home/deploy/foco_dengue/releases/current /home/deploy/foco_dengue
+  INFO [fa24555f] Finished in 0.301 seconds with exit status 0 (successful).
+ DEBUG [cbee1565] Running /usr/bin/env ls -x /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [cbee1565] Command: /usr/bin/env ls -x /home/deploy/foco_dengue/releases
+ DEBUG [cbee1565] 	20170609134014	20170609141154	20170609141439	20170609142554	20170609143056
+20170609143238	20170609143528
+ DEBUG [cbee1565] Finished in 2.075 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 7 deployed releases on 104.236.88.70
+  INFO [d45a4c4e] Running /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609134014 /home/deploy/foco_dengue/releases/20170609141154 as deploy@104.236.88.70
+ DEBUG [d45a4c4e] Command: /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609134014 /home/deploy/foco_dengue/releases/20170609141154
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Capfile'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/mongoid.config'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy.rb'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/staging.rb'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/production.rb'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/.gitignore'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/server.rb'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile.lock'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/log/capistrano.log'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+ DEBUG [d45a4c4e] 	rm: 
+ DEBUG [d45a4c4e] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/REVISION'
+ DEBUG [d45a4c4e] 	: Permission denied
+ DEBUG [d45a4c4e] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:39:59 -0300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c5f9caf0] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [c5f9caf0] Command: [ -d ~/.rvm ]
+ DEBUG [c5f9caf0] Finished in 2.069 seconds with exit status 1 (failed).
+ DEBUG [137ee5a0] Running [ -d /usr/local/rvm ] as deploy@104.236.88.70
+ DEBUG [137ee5a0] Command: [ -d /usr/local/rvm ]
+ DEBUG [137ee5a0] Finished in 0.302 seconds with exit status 0 (successful).
+ DEBUG [a2f73c44] Running /usr/local/rvm/bin/rvm version as deploy@104.236.88.70
+ DEBUG [a2f73c44] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [a2f73c44] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [a2f73c44] Finished in 2.331 seconds with exit status 0 (successful).
+ DEBUG [e01b4f10] Running /usr/local/rvm/bin/rvm current as deploy@104.236.88.70
+ DEBUG [e01b4f10] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [e01b4f10] 	ruby-2.4.0
+ DEBUG [e01b4f10] Finished in 0.696 seconds with exit status 0 (successful).
+ DEBUG [da90621c] Running /usr/local/rvm/bin/rvm default do ruby --version as deploy@104.236.88.70
+ DEBUG [da90621c] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [da90621c] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [da90621c] Finished in 0.661 seconds with exit status 0 (successful).
+  INFO [4c37793c] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [4c37793c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4c37793c] Finished in 2.360 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 100.0%
+  INFO [e3435099] Running /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh as deploy@104.236.88.70
+ DEBUG [e3435099] Command: /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh
+  INFO [e3435099] Finished in 0.320 seconds with exit status 0 (successful).
+  INFO [233f0d37] Running /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD as deploy@104.236.88.70
+ DEBUG [233f0d37] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD )
+ DEBUG [233f0d37] 	652aa07332fe886315d152eaafd6312046671a8b	HEAD
+  INFO [233f0d37] Finished in 2.754 seconds with exit status 0 (successful).
+  INFO [a17ce5b1] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [a17ce5b1] Command: /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases
+  INFO [a17ce5b1] Finished in 1.992 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:40:48 -0300 cap production deploy:cleanup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a2efa4e4] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [a2efa4e4] Command: [ -d ~/.rvm ]
+ DEBUG [a2efa4e4] Finished in 2.075 seconds with exit status 1 (failed).
+ DEBUG [d6541e13] Running [ -d /usr/local/rvm ] as deploy@104.236.88.70
+ DEBUG [d6541e13] Command: [ -d /usr/local/rvm ]
+ DEBUG [d6541e13] Finished in 0.317 seconds with exit status 0 (successful).
+ DEBUG [e51cf178] Running /usr/local/rvm/bin/rvm version as deploy@104.236.88.70
+ DEBUG [e51cf178] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [e51cf178] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [e51cf178] Finished in 2.261 seconds with exit status 0 (successful).
+ DEBUG [f6ef1d5c] Running /usr/local/rvm/bin/rvm current as deploy@104.236.88.70
+ DEBUG [f6ef1d5c] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [f6ef1d5c] 	ruby-2.4.0
+ DEBUG [f6ef1d5c] Finished in 0.572 seconds with exit status 0 (successful).
+ DEBUG [2dca9894] Running /usr/local/rvm/bin/rvm default do ruby --version as deploy@104.236.88.70
+ DEBUG [2dca9894] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [2dca9894] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [2dca9894] Finished in 0.697 seconds with exit status 0 (successful).
+ DEBUG [d6928ee5] Running /usr/bin/env ls -x /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [d6928ee5] Command: /usr/bin/env ls -x /home/deploy/foco_dengue/releases
+ DEBUG [d6928ee5] 	20170609141154	20170609141439	20170609142554	20170609143056	20170609143238
+20170609143528
+ DEBUG [d6928ee5] Finished in 1.947 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 104.236.88.70
+  INFO [4be6b35b] Running /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609141154 as deploy@104.236.88.70
+ DEBUG [4be6b35b] Command: /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609141154
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Capfile'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/mongoid.config'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy.rb'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/staging.rb'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/production.rb'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/.gitignore'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/server.rb'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile.lock'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/log/capistrano.log'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+ DEBUG [4be6b35b] 	rm: 
+ DEBUG [4be6b35b] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/REVISION'
+ DEBUG [4be6b35b] 	: Permission denied
+ DEBUG [4be6b35b] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:43:17 -0300 cap production deploy:cleanup use_sudo=true
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f00977d4] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [f00977d4] Command: [ -d ~/.rvm ]
+ DEBUG [f00977d4] Finished in 1.962 seconds with exit status 1 (failed).
+ DEBUG [deaa4582] Running [ -d /usr/local/rvm ] as deploy@104.236.88.70
+ DEBUG [deaa4582] Command: [ -d /usr/local/rvm ]
+ DEBUG [deaa4582] Finished in 0.295 seconds with exit status 0 (successful).
+ DEBUG [a97da97a] Running /usr/local/rvm/bin/rvm version as deploy@104.236.88.70
+ DEBUG [a97da97a] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [a97da97a] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [a97da97a] Finished in 2.139 seconds with exit status 0 (successful).
+ DEBUG [41d0e5ff] Running /usr/local/rvm/bin/rvm current as deploy@104.236.88.70
+ DEBUG [41d0e5ff] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [41d0e5ff] 	ruby-2.4.0
+ DEBUG [41d0e5ff] Finished in 0.479 seconds with exit status 0 (successful).
+ DEBUG [3d3ad455] Running /usr/local/rvm/bin/rvm default do ruby --version as deploy@104.236.88.70
+ DEBUG [3d3ad455] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [3d3ad455] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [3d3ad455] Finished in 0.728 seconds with exit status 0 (successful).
+ DEBUG [1c752099] Running /usr/bin/env ls -x /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [1c752099] Command: /usr/bin/env ls -x /home/deploy/foco_dengue/releases
+ DEBUG [1c752099] 	20170609141154	20170609141439	20170609142554	20170609143056	20170609143238
+20170609143528
+ DEBUG [1c752099] Finished in 2.045 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 104.236.88.70
+  INFO [b8ab6fd4] Running /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609141154 as deploy@104.236.88.70
+ DEBUG [b8ab6fd4] Command: /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609141154
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Capfile'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/mongoid.config'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy.rb'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/staging.rb'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/production.rb'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/.gitignore'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/server.rb'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile.lock'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/log/capistrano.log'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+ DEBUG [b8ab6fd4] 	rm: 
+ DEBUG [b8ab6fd4] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/REVISION'
+ DEBUG [b8ab6fd4] 	: Permission denied
+ DEBUG [b8ab6fd4] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:44:16 -0300 cap production deploy:cleanup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [36459f44] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [36459f44] Command: [ -d ~/.rvm ]
+ DEBUG [36459f44] Finished in 1.998 seconds with exit status 1 (failed).
+ DEBUG [eeb5d804] Running [ -d /usr/local/rvm ] as deploy@104.236.88.70
+ DEBUG [eeb5d804] Command: [ -d /usr/local/rvm ]
+ DEBUG [eeb5d804] Finished in 0.317 seconds with exit status 0 (successful).
+ DEBUG [5b703769] Running /usr/local/rvm/bin/rvm version as deploy@104.236.88.70
+ DEBUG [5b703769] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [5b703769] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [5b703769] Finished in 2.370 seconds with exit status 0 (successful).
+ DEBUG [a71c9580] Running /usr/local/rvm/bin/rvm current as deploy@104.236.88.70
+ DEBUG [a71c9580] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [a71c9580] 	ruby-2.4.0
+ DEBUG [a71c9580] Finished in 0.578 seconds with exit status 0 (successful).
+ DEBUG [13b7701a] Running /usr/local/rvm/bin/rvm default do ruby --version as deploy@104.236.88.70
+ DEBUG [13b7701a] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [13b7701a] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [13b7701a] Finished in 0.979 seconds with exit status 0 (successful).
+ DEBUG [fb282555] Running /usr/bin/env ls -x /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [fb282555] Command: /usr/bin/env ls -x /home/deploy/foco_dengue/releases
+ DEBUG [fb282555] 	20170609141154	20170609141439	20170609142554	20170609143056	20170609143238
+20170609143528
+ DEBUG [fb282555] Finished in 2.020 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 104.236.88.70
+  INFO [255c49b3] Running /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609141154 as deploy@104.236.88.70
+ DEBUG [255c49b3] Command: /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609141154
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Capfile'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/mongoid.config'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy.rb'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/staging.rb'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/production.rb'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/.gitignore'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/server.rb'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile.lock'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/log/capistrano.log'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
+ DEBUG [255c49b3] 	rm: 
+ DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/REVISION'
+ DEBUG [255c49b3] 	: Permission denied
+ DEBUG [255c49b3] 	
