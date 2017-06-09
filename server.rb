@@ -18,37 +18,20 @@ Mongoid.load! "mongoid.config"
 # Models
 class Ocorrencia  
   include Mongoid::Document
-  field :notificacao, type: String
-  field :doenca, type: String
-  field :data_ocorrencia, type: String
-  field :uf, type: String
-  field :municipio, type: String
-  field :codigo_ibge, type: String
-  field :fonte, type: String
-  field :codigo_fonte, type: String
-  field :data_sintoma, type: String
-  field :nome_paciente, type: String
-  field :nascimento_paciente, type: String
-  field :idade_paciente, type: String
-  field :sexo_paciente, type: String
-  field :gestante, type: String
-  field :cor_paciente, type: String
-  field :escolaridade, type: String
-  field :cartao_sus, type: String
-  field :mae_paciente, type: String
-  field :uf_paciente, type: String
-  field :codigo_ibge_paciente, type: String
-  field :distrito_paciente, type: String
-  field :bairro_paciente, type: String
-  field :logradouro_paciente, type: String
-  field :codigo_paciente, type: String
-  field :numero_casa_paciente, type: String
+  field :titulo, type: String
+  field :caminho_foto, type: String
+  field :endereco, type: String
+  field :bairro, type: String
+  field :telefone, type: String
+  field :email, type: String
+  field :descricao, type: String
+  field :data, type: String
 
-  index({ doenca: 'text' })
+  index({ ocorrencia: 'text' })
   # index({ isbn:1 }, { unique: true, name: "isbn_index" })
 
-  scope :doenca, -> (doenca) { where(doenca: /^#{doenca}/) }
-  scope :data_ocorrencia, -> (data_ocorrencia) { where(data_ocorrencia: data_ocorrencia) }
+  scope :ocorrencia, -> (ocorrencia) { where(ocorrencia: /^#{ocorrencia}/) }
+  scope :data, -> (data) { where(data: data) }
 end
 
 # Serializers
@@ -59,11 +42,19 @@ class OcorrenciaSerializer
 
   def as_json(*)
     data = {
-      id:@ocorrencia.id.to_s,
-      doenca:@ocorrencia.doenca,
-      data_ocorrencia:@ocorrencia.data_ocorrencia,
+      id: @ocorrencia.id.to_s,
+      titulo: @ocorrencia.titulo,
+      data: @ocorrencia.data,
+      telefone: @ocorrencia.telefone,
+      caminho_foto: @ocorrencia.caminho_foto,
+      endereco: @ocorrencia.endereco,
+      data: @ocorrencia.data,
+      bairro: @ocorrencia.bairro,
+      email: @ocorrencia.email,
+      descricao: @ocorrencia.descricao,
+
     }
-    data[:errors] = @ocorrencia.errors if@ocorrencia.errors.any?
+    data[:errors] = @ocorrencia.errors if @ocorrencia.errors.any?
     data
   end
 end
@@ -114,7 +105,7 @@ namespace '/api/v1' do
 
   get '/ocorrencias' do
 
-   [:doenca, :data_ocorrencia].each do |filter|
+   [:ocorrencia, :data].each do |filter|
       ocorrencias = ocorrencias.send(filter, params[filter]) if params[filter]
     end
 
@@ -129,10 +120,10 @@ namespace '/api/v1' do
 
   post '/ocorrencias' do
     ocorrencia = Ocorrencia.new(json_params)
-    halt 422, serialize(ocorrencia) unless ocorrencia.save
+    halt 422 unless ocorrencia.save
 
-    response.headers['Location'] = "#{base_url}/api/v1/ocorrencias/#{ocorrencia.id}"
-    status 201
+    # response.headers['Location'] = "#{base_url}/api/v1/ocorrencias/#{ocorrencia.id}"
+    # status 201
   end
 
   patch '/ocorrencias/:id' do |id|

@@ -6,3 +6,6 @@ gem 'mongoid'
 gem 'sinatra-contrib' 
 gem 'shotgun'
 gem "sinatra-cross_origin", "~> 0.3.1" 
+gem "capistrano"
+gem "capistrano-bundler"
+gem "capistrano-passenger"
