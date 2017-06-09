@@ -3,7 +3,7 @@ lock "3.8.1"
 
 set :application, "foco_dengue"
 set :repo_url, "git@github.com:akmerejf/sinatra-server.git"
-server "104.236.88.70", :user => "deploy", :roles => %{web db app}
+server "104.236.88.70", :user => "deploy", :roles => %{web app}
 set :deploy_to, "/home/deploy/foco_dengue"
 set :ssh_options, { forward_agent: true, user: fetch(:user), paranoid: true, keys: "~/.ssh/id_rsa" }
 set :use_sudo, true
