@@ -419,3 +419,17 @@
  DEBUG [e2bd79f2] Command: /usr/bin/env mkdir -p /tmp
   INFO [e2bd79f2] Finished in 1.997 seconds with exit status 0 (successful).
  DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 10:09:55 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f1529fc1] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [f1529fc1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f1529fc1] Finished in 1.974 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 10:12:59 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [93a10b1c] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [93a10b1c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [93a10b1c] Finished in 2.004 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
