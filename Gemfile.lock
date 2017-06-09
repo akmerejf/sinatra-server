@@ -41,6 +41,9 @@ GEM
       sshkit (~> 1.2)
     capistrano-passenger (0.2.0)
       capistrano (~> 3.0)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     concurrent-ruby (1.0.5)
     i18n (0.8.4)
     minitest (5.10.2)
@@ -74,6 +77,7 @@ DEPENDENCIES
   capistrano
   capistrano-bundler
   capistrano-passenger
+  capistrano-rvm
   mongoid
   shotgun
   sinatra!
