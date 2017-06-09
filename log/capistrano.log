@@ -512,3 +512,43 @@
  DEBUG [a76ef7d2] Command: /usr/bin/env mkdir -p /tmp
   INFO [a76ef7d2] Finished in 2.163 seconds with exit status 0 (successful).
  DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 10:24:58 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a02db378] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [a02db378] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a02db378] Finished in 2.154 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 10:25:10 -0300 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [cf86ecc9] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [cf86ecc9] Command: /usr/bin/env mkdir -p /tmp
+  INFO [cf86ecc9] Finished in 2.008 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-staging-akmere.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foco_dengue-staging-akmere.sh 100.0%
+  INFO [4e920dd0] Running /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-staging-akmere.sh as deploy@104.236.88.70
+ DEBUG [4e920dd0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-staging-akmere.sh
+  INFO [4e920dd0] Finished in 0.313 seconds with exit status 0 (successful).
+  INFO [8d41a399] Running /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD as deploy@104.236.88.70
+ DEBUG [8d41a399] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-staging-akmere.sh" ; /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD )
+ DEBUG [8d41a399] 	Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+ DEBUG [8d41a399] 	5c5673e15f03ff3b4d6b73cc2d8213900950c95b	HEAD
+  INFO [8d41a399] Finished in 2.598 seconds with exit status 0 (successful).
+  INFO [59a3d2f1] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [59a3d2f1] Command: /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases
+  INFO [59a3d2f1] Finished in 1.947 seconds with exit status 0 (successful).
+ DEBUG [d2f25508] Running [ -f /home/deploy/foco_dengue/current/REVISION ] as deploy@104.236.88.70
+ DEBUG [d2f25508] Command: [ -f /home/deploy/foco_dengue/current/REVISION ]
+ DEBUG [d2f25508] Finished in 2.120 seconds with exit status 1 (failed).
+ DEBUG [79a4a870] Running [ -f /home/deploy/foco_dengue/repo/HEAD ] as deploy@104.236.88.70
+ DEBUG [79a4a870] Command: [ -f /home/deploy/foco_dengue/repo/HEAD ]
+ DEBUG [79a4a870] Finished in 1.975 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/foco_dengue/repo
+ DEBUG [54b37a88] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [54b37a88] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [54b37a88] Finished in 2.044 seconds with exit status 0 (successful).
+  INFO [9979678e] Running /usr/bin/env git remote set-url origin git@github.com:akmerejf/sinatra-server.git as deploy@104.236.88.70
+ DEBUG [9979678e] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-staging-akmere.sh" ; /usr/bin/env git remote set-url origin git@github.com:akmerejf/sinatra-server.git )
+ DEBUG [9979678e] 	error: could not lock config file config: Permission denied
+ DEBUG [9979678e] 	fatal: Could not set 'remote.origin.url' to 'git@github.com:akmerejf/sinatra-server.git'

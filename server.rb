@@ -44,7 +44,6 @@ class OcorrenciaSerializer
     data = {
       id: @ocorrencia.id.to_s,
       titulo: @ocorrencia.titulo,
-      data: @ocorrencia.data,
       telefone: @ocorrencia.telefone,
       caminho_foto: @ocorrencia.caminho_foto,
       endereco: @ocorrencia.endereco,
