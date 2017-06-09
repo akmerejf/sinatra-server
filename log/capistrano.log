@@ -1603,3 +1603,290 @@ Run `bundle install` first.
  DEBUG [255c49b3] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/REVISION'
  DEBUG [255c49b3] 	: Permission denied
  DEBUG [255c49b3] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:44:42 -0300 cap production deploy:cleanup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0f142bc8] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [0f142bc8] Command: [ -d ~/.rvm ]
+ DEBUG [0f142bc8] Finished in 1.959 seconds with exit status 1 (failed).
+ DEBUG [559da37f] Running [ -d /usr/local/rvm ] as deploy@104.236.88.70
+ DEBUG [559da37f] Command: [ -d /usr/local/rvm ]
+ DEBUG [559da37f] Finished in 0.308 seconds with exit status 0 (successful).
+ DEBUG [82adf387] Running /usr/local/rvm/bin/rvm version as deploy@104.236.88.70
+ DEBUG [82adf387] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [82adf387] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [82adf387] Finished in 2.199 seconds with exit status 0 (successful).
+ DEBUG [2dc47be4] Running /usr/local/rvm/bin/rvm current as deploy@104.236.88.70
+ DEBUG [2dc47be4] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [2dc47be4] 	ruby-2.4.0
+ DEBUG [2dc47be4] Finished in 0.571 seconds with exit status 0 (successful).
+ DEBUG [b0924d48] Running /usr/local/rvm/bin/rvm default do ruby --version as deploy@104.236.88.70
+ DEBUG [b0924d48] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [b0924d48] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [b0924d48] Finished in 0.978 seconds with exit status 0 (successful).
+ DEBUG [9f67238d] Running /usr/bin/env ls -x /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [9f67238d] Command: /usr/bin/env ls -x /home/deploy/foco_dengue/releases
+ DEBUG [9f67238d] 	20170609141154	20170609141439	20170609142554	20170609143056	20170609143238
+20170609143528
+ DEBUG [9f67238d] Finished in 2.043 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 104.236.88.70
+  INFO [e9145e25] Running /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609141154 as deploy@104.236.88.70
+ DEBUG [e9145e25] Command: /usr/bin/env rm -rf /home/deploy/foco_dengue/releases/20170609141154
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Capfile'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/mongoid.config'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy.rb'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/staging.rb'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/config/deploy/production.rb'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/.gitignore'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/server.rb'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/Gemfile.lock'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/log/capistrano.log'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+ DEBUG [e9145e25] 	rm: 
+ DEBUG [e9145e25] 	cannot remove '/home/deploy/foco_dengue/releases/20170609141154/REVISION'
+ DEBUG [e9145e25] 	: Permission denied
+ DEBUG [e9145e25] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:45:36 -0300 cap production deploy:cleanup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [fe1f75f6] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [fe1f75f6] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:49:18 -0300 cap production deploy:cleanup
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8c6fd371] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [8c6fd371] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 11:49:21 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3aaac7a1] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [3aaac7a1] Command: [ -d ~/.rvm ]
+ DEBUG [3aaac7a1] Finished in 1.930 seconds with exit status 1 (failed).
+ DEBUG [98605b6d] Running [ -d /usr/local/rvm ] as deploy@104.236.88.70
+ DEBUG [98605b6d] Command: [ -d /usr/local/rvm ]
+ DEBUG [98605b6d] Finished in 0.296 seconds with exit status 0 (successful).
+ DEBUG [aeddc8cf] Running /usr/local/rvm/bin/rvm version as deploy@104.236.88.70
+ DEBUG [aeddc8cf] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [aeddc8cf] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [aeddc8cf] Finished in 2.376 seconds with exit status 0 (successful).
+ DEBUG [e7e0d18f] Running /usr/local/rvm/bin/rvm current as deploy@104.236.88.70
+ DEBUG [e7e0d18f] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [e7e0d18f] 	ruby-2.4.0
+ DEBUG [e7e0d18f] Finished in 0.748 seconds with exit status 0 (successful).
+ DEBUG [76390f11] Running /usr/local/rvm/bin/rvm default do ruby --version as deploy@104.236.88.70
+ DEBUG [76390f11] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [76390f11] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [76390f11] Finished in 0.766 seconds with exit status 0 (successful).
+  INFO [b764ac96] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [b764ac96] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b764ac96] Finished in 2.099 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 100.0%
+  INFO [263ac502] Running /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh as deploy@104.236.88.70
+ DEBUG [263ac502] Command: /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh
+  INFO [263ac502] Finished in 0.318 seconds with exit status 0 (successful).
+  INFO [68e86e58] Running /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD as deploy@104.236.88.70
+ DEBUG [68e86e58] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD )
+ DEBUG [68e86e58] 	e53a471afaa675575be66cd6af913b21891fa546	HEAD
+  INFO [68e86e58] Finished in 2.691 seconds with exit status 0 (successful).
+  INFO [780eb740] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [780eb740] Command: /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases
+  INFO [780eb740] Finished in 2.016 seconds with exit status 0 (successful).
+ DEBUG [e39ba33f] Running [ -f /home/deploy/foco_dengue/current/REVISION ] as deploy@104.236.88.70
+ DEBUG [e39ba33f] Command: [ -f /home/deploy/foco_dengue/current/REVISION ]
+ DEBUG [e39ba33f] Finished in 2.315 seconds with exit status 1 (failed).
+ DEBUG [a7d9b1e4] Running [ -f /home/deploy/foco_dengue/repo/HEAD ] as deploy@104.236.88.70
+ DEBUG [a7d9b1e4] Command: [ -f /home/deploy/foco_dengue/repo/HEAD ]
+ DEBUG [a7d9b1e4] Finished in 1.909 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/foco_dengue/repo
+ DEBUG [03859854] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [03859854] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [03859854] Finished in 2.047 seconds with exit status 0 (successful).
+  INFO [2a6d1934] Running /usr/bin/env git remote set-url origin git@github.com:akmerejf/sinatra-server.git as deploy@104.236.88.70
+ DEBUG [2a6d1934] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git remote set-url origin git@github.com:akmerejf/sinatra-server.git )
+  INFO [2a6d1934] Finished in 0.323 seconds with exit status 0 (successful).
+  INFO [42ab5ee6] Running /usr/bin/env git remote update --prune as deploy@104.236.88.70
+ DEBUG [42ab5ee6] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [42ab5ee6] 	Fetching origin
+ DEBUG [42ab5ee6] 	From github.com:akmerejf/sinatra-server
+   652aa07..e53a471  master     -> master
+  INFO [42ab5ee6] Finished in 1.415 seconds with exit status 0 (successful).
+ DEBUG [424a9401] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [424a9401] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [424a9401] Finished in 1.915 seconds with exit status 0 (successful).
+  INFO [b6dfb810] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/releases/20170609144938 as deploy@104.236.88.70
+ DEBUG [b6dfb810] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env mkdir -p /home/deploy/foco_dengue/releases/20170609144938 )
+  INFO [b6dfb810] Finished in 0.305 seconds with exit status 0 (successful).
+  INFO [6545e934] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/foco_dengue/releases/20170609144938 as deploy@104.236.88.70
+ DEBUG [6545e934] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/foco_dengue/releases/20170609144938 )
+  INFO [6545e934] Finished in 0.323 seconds with exit status 0 (successful).
+ DEBUG [126e8ce7] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [126e8ce7] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [126e8ce7] Finished in 1.975 seconds with exit status 0 (successful).
+ DEBUG [81613c4e] Running /usr/bin/env git rev-list --max-count=1 master as deploy@104.236.88.70
+ DEBUG [81613c4e] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [81613c4e] 	e53a471afaa675575be66cd6af913b21891fa546
+ DEBUG [81613c4e] Finished in 0.306 seconds with exit status 0 (successful).
+ DEBUG [ac58daf6] Running if test ! -d /home/deploy/foco_dengue/releases/20170609144938; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609144938'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [ac58daf6] Command: if test ! -d /home/deploy/foco_dengue/releases/20170609144938; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609144938'" 1>&2; false; fi
+ DEBUG [ac58daf6] Finished in 1.891 seconds with exit status 0 (successful).
+  INFO [b8250afd] Running /usr/bin/env echo "e53a471afaa675575be66cd6af913b21891fa546" >> REVISION as deploy@104.236.88.70
+ DEBUG [b8250afd] Command: cd /home/deploy/foco_dengue/releases/20170609144938 && /usr/bin/env echo "e53a471afaa675575be66cd6af913b21891fa546" >> REVISION
+  INFO [b8250afd] Finished in 0.296 seconds with exit status 0 (successful).
+ DEBUG [4316aa67] Running if test ! -d /home/deploy/foco_dengue/releases/20170609144938; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609144938'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [4316aa67] Command: if test ! -d /home/deploy/foco_dengue/releases/20170609144938; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609144938'" 1>&2; false; fi
+ DEBUG [4316aa67] Finished in 2.007 seconds with exit status 0 (successful).
+ DEBUG [326bfd9c] Running /usr/local/rvm/bin/rvm default do bundle check --path /home/deploy/foco_dengue/shared/bundle as deploy@104.236.88.70
+ DEBUG [326bfd9c] Command: cd /home/deploy/foco_dengue/releases/20170609144938 && /usr/local/rvm/bin/rvm default do bundle check --path /home/deploy/foco_dengue/shared/bundle
+ DEBUG [326bfd9c] 	The git source `git://github.com/sinatra/sinatra.git` uses the `git` protocol, which transmits data without encryption. Disable this warning with `bundle config git.allow_insecure true`, or switch to the `https` protocol to keep your data secure.
+ DEBUG [326bfd9c] 	The Gemfile's dependencies are satisfied
+ DEBUG [326bfd9c] Finished in 1.292 seconds with exit status 0 (successful).
+  INFO [b46ca5e0] Running /usr/bin/env ln -s /home/deploy/foco_dengue/releases/20170609144938 /home/deploy/foco_dengue/releases/current as deploy@104.236.88.70
+ DEBUG [b46ca5e0] Command: /usr/bin/env ln -s /home/deploy/foco_dengue/releases/20170609144938 /home/deploy/foco_dengue/releases/current
+  INFO [b46ca5e0] Finished in 1.948 seconds with exit status 0 (successful).
+  INFO [5abbd094] Running /usr/bin/env mv /home/deploy/foco_dengue/releases/current /home/deploy/foco_dengue as deploy@104.236.88.70
+ DEBUG [5abbd094] Command: /usr/bin/env mv /home/deploy/foco_dengue/releases/current /home/deploy/foco_dengue
+  INFO [5abbd094] Finished in 0.300 seconds with exit status 0 (successful).
+ DEBUG [7568949b] Running /usr/bin/env ls -x /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [7568949b] Command: /usr/bin/env ls -x /home/deploy/foco_dengue/releases
+ DEBUG [7568949b] 	20170609144938
+ DEBUG [7568949b] Finished in 1.918 seconds with exit status 0 (successful).
+ DEBUG [bc01648c] Running if test ! -d /home/deploy/foco_dengue/releases; then echo "Directory does not exist '/home/deploy/foco_dengue/releases'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [bc01648c] Command: if test ! -d /home/deploy/foco_dengue/releases; then echo "Directory does not exist '/home/deploy/foco_dengue/releases'" 1>&2; false; fi
+ DEBUG [bc01648c] Finished in 1.970 seconds with exit status 0 (successful).
+  INFO [f682f593] Running /usr/bin/env echo "Branch master (at e53a471afaa675575be66cd6af913b21891fa546) deployed as release 20170609144938 by akmere" >> /home/deploy/foco_dengue/revisions.log as deploy@104.236.88.70
+ DEBUG [f682f593] Command: cd /home/deploy/foco_dengue/releases && /usr/bin/env echo "Branch master (at e53a471afaa675575be66cd6af913b21891fa546) deployed as release 20170609144938 by akmere" >> /home/deploy/foco_dengue/revisions.log
+  INFO [f682f593] Finished in 0.310 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 18:02:07 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6d5cf326] Running [ -d ~/.rvm ] as deploy@104.236.88.70
+ DEBUG [6d5cf326] Command: [ -d ~/.rvm ]
+ DEBUG [6d5cf326] Finished in 2.009 seconds with exit status 1 (failed).
+ DEBUG [f541b2af] Running [ -d /usr/local/rvm ] as deploy@104.236.88.70
+ DEBUG [f541b2af] Command: [ -d /usr/local/rvm ]
+ DEBUG [f541b2af] Finished in 0.295 seconds with exit status 0 (successful).
+ DEBUG [d3f19530] Running /usr/local/rvm/bin/rvm version as deploy@104.236.88.70
+ DEBUG [d3f19530] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [d3f19530] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [d3f19530] Finished in 2.297 seconds with exit status 0 (successful).
+ DEBUG [351a06a9] Running /usr/local/rvm/bin/rvm current as deploy@104.236.88.70
+ DEBUG [351a06a9] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [351a06a9] 	ruby-2.4.0
+ DEBUG [351a06a9] Finished in 0.739 seconds with exit status 0 (successful).
+ DEBUG [7005420f] Running /usr/local/rvm/bin/rvm default do ruby --version as deploy@104.236.88.70
+ DEBUG [7005420f] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [7005420f] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [7005420f] Finished in 0.879 seconds with exit status 0 (successful).
+  INFO [9f9b5907] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [9f9b5907] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9f9b5907] Finished in 1.977 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 100.0%
+  INFO [13cd0399] Running /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh as deploy@104.236.88.70
+ DEBUG [13cd0399] Command: /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh
+  INFO [13cd0399] Finished in 0.299 seconds with exit status 0 (successful).
+  INFO [65ab8b62] Running /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD as deploy@104.236.88.70
+ DEBUG [65ab8b62] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD )
+ DEBUG [65ab8b62] 	e53a471afaa675575be66cd6af913b21891fa546	HEAD
+  INFO [65ab8b62] Finished in 2.616 seconds with exit status 0 (successful).
+  INFO [eb2dfe0b] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [eb2dfe0b] Command: /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases
+  INFO [eb2dfe0b] Finished in 1.985 seconds with exit status 0 (successful).
+ DEBUG [9e9e7443] Running [ -f /home/deploy/foco_dengue/current/REVISION ] as deploy@104.236.88.70
+ DEBUG [9e9e7443] Command: [ -f /home/deploy/foco_dengue/current/REVISION ]
+ DEBUG [9e9e7443] Finished in 1.959 seconds with exit status 0 (successful).
+ DEBUG [c89cd381] Running /usr/bin/env cat /home/deploy/foco_dengue/current/REVISION 2>/dev/null as deploy@104.236.88.70
+ DEBUG [c89cd381] Command: /usr/bin/env cat /home/deploy/foco_dengue/current/REVISION 2>/dev/null
+ DEBUG [c89cd381] 	e53a471afaa675575be66cd6af913b21891fa546
+ DEBUG [c89cd381] Finished in 0.301 seconds with exit status 0 (successful).
+ DEBUG [7eccd23c] Running [ -f /home/deploy/foco_dengue/repo/HEAD ] as deploy@104.236.88.70
+ DEBUG [7eccd23c] Command: [ -f /home/deploy/foco_dengue/repo/HEAD ]
+ DEBUG [7eccd23c] Finished in 2.010 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/foco_dengue/repo
+ DEBUG [1e4d9d48] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [1e4d9d48] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [1e4d9d48] Finished in 1.937 seconds with exit status 0 (successful).
+  INFO [b17100b6] Running /usr/bin/env git remote set-url origin git@github.com:akmerejf/sinatra-server.git as deploy@104.236.88.70
+ DEBUG [b17100b6] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git remote set-url origin git@github.com:akmerejf/sinatra-server.git )
+  INFO [b17100b6] Finished in 0.305 seconds with exit status 0 (successful).
+  INFO [016d4c77] Running /usr/bin/env git remote update --prune as deploy@104.236.88.70
+ DEBUG [016d4c77] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [016d4c77] 	Fetching origin
+  INFO [016d4c77] Finished in 1.047 seconds with exit status 0 (successful).
+ DEBUG [c7489579] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [c7489579] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [c7489579] Finished in 1.920 seconds with exit status 0 (successful).
+  INFO [37ad34f2] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/releases/20170609210223 as deploy@104.236.88.70
+ DEBUG [37ad34f2] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env mkdir -p /home/deploy/foco_dengue/releases/20170609210223 )
+  INFO [37ad34f2] Finished in 0.297 seconds with exit status 0 (successful).
+  INFO [18655e96] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/foco_dengue/releases/20170609210223 as deploy@104.236.88.70
+ DEBUG [18655e96] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/foco_dengue/releases/20170609210223 )
+  INFO [18655e96] Finished in 0.310 seconds with exit status 0 (successful).
+ DEBUG [bc2de89d] Running if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [bc2de89d] Command: if test ! -d /home/deploy/foco_dengue/repo; then echo "Directory does not exist '/home/deploy/foco_dengue/repo'" 1>&2; false; fi
+ DEBUG [bc2de89d] Finished in 1.969 seconds with exit status 0 (successful).
+ DEBUG [540f5723] Running /usr/bin/env git rev-list --max-count=1 master as deploy@104.236.88.70
+ DEBUG [540f5723] Command: cd /home/deploy/foco_dengue/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [540f5723] 	e53a471afaa675575be66cd6af913b21891fa546
+ DEBUG [540f5723] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [cd4dedb0] Running if test ! -d /home/deploy/foco_dengue/releases/20170609210223; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609210223'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [cd4dedb0] Command: if test ! -d /home/deploy/foco_dengue/releases/20170609210223; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609210223'" 1>&2; false; fi
+ DEBUG [cd4dedb0] Finished in 1.955 seconds with exit status 0 (successful).
+  INFO [40db7003] Running /usr/bin/env echo "e53a471afaa675575be66cd6af913b21891fa546" >> REVISION as deploy@104.236.88.70
+ DEBUG [40db7003] Command: cd /home/deploy/foco_dengue/releases/20170609210223 && /usr/bin/env echo "e53a471afaa675575be66cd6af913b21891fa546" >> REVISION
+  INFO [40db7003] Finished in 0.302 seconds with exit status 0 (successful).
+ DEBUG [d4a4241d] Running if test ! -d /home/deploy/foco_dengue/releases/20170609210223; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609210223'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [d4a4241d] Command: if test ! -d /home/deploy/foco_dengue/releases/20170609210223; then echo "Directory does not exist '/home/deploy/foco_dengue/releases/20170609210223'" 1>&2; false; fi
+ DEBUG [d4a4241d] Finished in 1.979 seconds with exit status 0 (successful).
+ DEBUG [dd43118e] Running /usr/local/rvm/bin/rvm default do bundle check --path /home/deploy/foco_dengue/shared/bundle as deploy@104.236.88.70
+ DEBUG [dd43118e] Command: cd /home/deploy/foco_dengue/releases/20170609210223 && /usr/local/rvm/bin/rvm default do bundle check --path /home/deploy/foco_dengue/shared/bundle
+ DEBUG [dd43118e] 	The git source `git://github.com/sinatra/sinatra.git` uses the `git` protocol, which transmits data without encryption. Disable this warning with `bundle config git.allow_insecure true`, or switch to the `https` protocol to keep your data secure.
+ DEBUG [dd43118e] 	The Gemfile's dependencies are satisfied
+ DEBUG [dd43118e] Finished in 1.457 seconds with exit status 0 (successful).
+  INFO [a00e033f] Running /usr/bin/env ln -s /home/deploy/foco_dengue/releases/20170609210223 /home/deploy/foco_dengue/releases/current as deploy@104.236.88.70
+ DEBUG [a00e033f] Command: /usr/bin/env ln -s /home/deploy/foco_dengue/releases/20170609210223 /home/deploy/foco_dengue/releases/current
+  INFO [a00e033f] Finished in 1.888 seconds with exit status 0 (successful).
+  INFO [468e35ba] Running /usr/bin/env mv /home/deploy/foco_dengue/releases/current /home/deploy/foco_dengue as deploy@104.236.88.70
+ DEBUG [468e35ba] Command: /usr/bin/env mv /home/deploy/foco_dengue/releases/current /home/deploy/foco_dengue
+  INFO [468e35ba] Finished in 0.309 seconds with exit status 0 (successful).
+ DEBUG [8f649e52] Running /usr/bin/env ls -x /home/deploy/foco_dengue/releases as deploy@104.236.88.70
+ DEBUG [8f649e52] Command: /usr/bin/env ls -x /home/deploy/foco_dengue/releases
+ DEBUG [8f649e52] 	20170609144938	20170609210223
+ DEBUG [8f649e52] Finished in 1.945 seconds with exit status 0 (successful).
+ DEBUG [43ae1a9b] Running if test ! -d /home/deploy/foco_dengue/releases; then echo "Directory does not exist '/home/deploy/foco_dengue/releases'" 1>&2; false; fi as deploy@104.236.88.70
+ DEBUG [43ae1a9b] Command: if test ! -d /home/deploy/foco_dengue/releases; then echo "Directory does not exist '/home/deploy/foco_dengue/releases'" 1>&2; false; fi
+ DEBUG [43ae1a9b] Finished in 1.951 seconds with exit status 0 (successful).
+  INFO [1f2b23b8] Running /usr/bin/env echo "Branch master (at e53a471afaa675575be66cd6af913b21891fa546) deployed as release 20170609210223 by akmere" >> /home/deploy/foco_dengue/revisions.log as deploy@104.236.88.70
+ DEBUG [1f2b23b8] Command: cd /home/deploy/foco_dengue/releases && /usr/bin/env echo "Branch master (at e53a471afaa675575be66cd6af913b21891fa546) deployed as release 20170609210223 by akmere" >> /home/deploy/foco_dengue/revisions.log
+  INFO [1f2b23b8] Finished in 0.316 seconds with exit status 0 (successful).
