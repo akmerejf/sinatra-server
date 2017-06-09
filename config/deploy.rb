@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:akmerejf/sinatra-server.git"
 server "104.236.88.70", :user => "deploy", :roles => %{web app}
 set :deploy_to, "/home/deploy/foco_dengue"
 set :linked_files, ["config/secrets.yml"]
-set :ssh_options, { :forward_agent => true }
+set :ssh_options[:use_agent] = false
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

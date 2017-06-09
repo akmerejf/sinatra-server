@@ -398,3 +398,24 @@
  DEBUG [fad03d76] 	'bundle'
  DEBUG [fad03d76] 	: No such file or directory
  DEBUG [fad03d76] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 10:02:04 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [95e11386] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [95e11386] Command: /usr/bin/env mkdir -p /tmp
+  INFO [95e11386] Finished in 2.455 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 10:03:33 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [93f62973] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [93f62973] Command: /usr/bin/env mkdir -p /tmp
+  INFO [93f62973] Finished in 2.345 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 10:05:25 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e2bd79f2] Running /usr/bin/env mkdir -p /tmp as deploy@104.236.88.70
+ DEBUG [e2bd79f2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e2bd79f2] Finished in 1.997 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
