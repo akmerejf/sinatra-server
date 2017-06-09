@@ -2,8 +2,11 @@
 lock "3.8.1"
 
 set :application, "foco_dengue"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "git@github.com:akmerejf/sinatra-server.git"
 server "104.236.88.70", :user => "root", :roles => %{web app}
+set :deploy_to, "/home/deploy/foco_dengue"
+set :linked_files, ["config/secrets.yml"]
+set :ssh_options, { :forward_agent => true }
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

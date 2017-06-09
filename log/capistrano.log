@@ -1,0 +1,27 @@
+# Logfile created on 2017-06-09 09:40:36 -0300 by logger.rb/53141
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 09:40:36 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [14654927] Running /usr/bin/env mkdir -p /tmp as root@104.236.88.70
+ DEBUG [14654927] Command: /usr/bin/env mkdir -p /tmp
+  INFO [14654927] Finished in 2.747 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foco_dengue-production-akmere.sh 100.0%
+  INFO [fcfc01b9] Running /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh as root@104.236.88.70
+ DEBUG [fcfc01b9] Command: /usr/bin/env chmod 700 /tmp/git-ssh-foco_dengue-production-akmere.sh
+  INFO [fcfc01b9] Finished in 0.530 seconds with exit status 0 (successful).
+  INFO [6c5cc8f3] Running /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD as root@104.236.88.70
+ DEBUG [6c5cc8f3] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foco_dengue-production-akmere.sh" ; /usr/bin/env git ls-remote git@github.com:akmerejf/sinatra-server.git HEAD )
+ DEBUG [6c5cc8f3] 	Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+ DEBUG [6c5cc8f3] 	5eb92638fad1995c7f133b133d1e9f6e5f3d6418	HEAD
+  INFO [6c5cc8f3] Finished in 3.596 seconds with exit status 0 (successful).
+  INFO [5f57ba59] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases as root@104.236.88.70
+ DEBUG [5f57ba59] Command: /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared /home/deploy/foco_dengue/releases
+  INFO [5f57ba59] Finished in 2.318 seconds with exit status 0 (successful).
+  INFO [25b86b5f] Running /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared/config as root@104.236.88.70
+ DEBUG [25b86b5f] Command: /usr/bin/env mkdir -p /home/deploy/foco_dengue/shared/config
+  INFO [25b86b5f] Finished in 16.607 seconds with exit status 0 (successful).
+ DEBUG [f3dbfb14] Running [ -f /home/deploy/foco_dengue/shared/config/secrets.yml ] as root@104.236.88.70
+ DEBUG [f3dbfb14] Command: [ -f /home/deploy/foco_dengue/shared/config/secrets.yml ]
+ DEBUG [f3dbfb14] Finished in 6.710 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/foco_dengue/shared/config/secrets.yml does not exist on 104.236.88.70
