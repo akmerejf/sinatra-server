@@ -5,7 +5,6 @@ set :application, "foco_dengue"
 set :repo_url, "git@github.com:akmerejf/sinatra-server.git"
 server "104.236.88.70", :user => "deploy", :roles => %{web app}
 set :deploy_to, "/home/deploy/foco_dengue"
-set :linked_files, ["config/secrets.yml"]
 set :ssh_options, { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa) }
 
 # Default branch is :master
