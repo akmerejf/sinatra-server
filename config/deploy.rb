@@ -7,6 +7,7 @@ server "104.236.88.70", :user => "deploy", :roles => %{web app}
 set :deploy_to, "/home/deploy/foco_dengue"
 set :ssh_options, { forward_agent: true, user: fetch(:user), paranoid: true, keys: "~/.ssh/id_rsa" }
 set :use_sudo, true
+set :public_folder, 'public'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
