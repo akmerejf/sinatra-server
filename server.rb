@@ -13,7 +13,7 @@ end
 
 
 # DB Setup
-Mongoid.load! "mongoid.config"
+Mongoid.load! "mongoid.yml"
 
 # Models
 class Ocorrencia  
