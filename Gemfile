@@ -9,3 +9,5 @@ gem "sinatra-cross_origin", "~> 0.3.1"
 gem "capistrano"
 gem "capistrano-bundler"
 gem "capistrano-passenger"
+gem 'foreman'
+gem 'heroku'
