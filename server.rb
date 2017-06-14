@@ -136,6 +136,11 @@ namespace '/api/v1' do
     status 204
   end
 
+  post '/ocorrencias/:id' do |id|
+    ocorrencia.destroy if ocorrencia
+    status 204
+  end
+
   delete '/ocorrencias/apagar_tuto' do
     ocorrencias = Ocorrencia.all
     ocorrencias.each do |o|
